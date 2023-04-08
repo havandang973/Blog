@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.head {
+    width: 300px;
+    height: 100vh;
+    background-color: #f5f6fa;
+    padding: 50px 20px;
+    text-align: right;
+    position: fixed;
+}
+
+.logo_head {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.img_logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.title_head {
+    margin-bottom: 8px;
+    color: #021216;
+    font-size: 28px;
+}
+
+.name_head {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+.story_head {
+    font-size: 14px;
+    line-height: 26px;
+    color: #6e6e6e;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.story_head:after {
+    content: " ";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: #666;
+    float: right;
+    margin: 20px 0;
+}
+
+.info_head {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info_head > a {
+    text-decoration: none;
+    color: #333;
+}
+
+.info_head > a:hover {
+    text-decoration: underline;
+}
+
+
+/* container */
+
+.container {
+    height: 3000px;
+    width: 80%;
+}
+.main {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    flex-wrap: wrap;
+}
+
+.home_list_item {
+    margin-bottom: 14px;
+    max-width: 380px;
+    flex: 33.33%;
+}
+
+.home_date_indicator {
+    color: #888;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.home_list_item > a {
+    text-decoration: none;
+    color: #1c84d9;
+    font-size: 16.64px;
+}
+
+.home_list_item > a:hover {
+    text-decoration: underline;
+}

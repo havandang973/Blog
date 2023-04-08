@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+.head_post {
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+}
+
+.logo_post {
+    width: 160px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img_logo_post {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px solid #1C84D9;
+}
+
+.title_logo {
+    color: #1C84D9;
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 8px;
+    margin-top: 3px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* container_post */
+
+.container_post {
+    width: 100%;
+    height: 90%;
+    /* background-color: antiquewhite; */
+}
+
+.form_post {
+    width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.link_home {
+    text-decoration: none;
+    color: #1c84d9;
+    margin: 24px 0;
+    display: block;
+}
+
+.link_home:hover {
+    text-decoration: underline;
+}
+
+.title_post {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+}
+
+.title_post:after {
+    display: block;
+    content: " ";
+    border-bottom: 0.1rem solid #ccc;
+    width: 70px;
+    margin: 20px 0;
+}
+
+.content_post {
+    text-align: justify;
+    line-height: 26px;
+    margin: 40px 0;
+}
+
+.date_post {
+    font-size: 14px;
+    color: #8f8787;
+    font-style: oblique;
+}
+
+.img_post {
+    width: 100%
+}
+
+.topic_tag {
+    display: inline-block;
+    padding: 3px 12px;
+    margin: 5px;
+    background: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    text-decoration: none;
+    color: #1c84d9;
+}
+
+.topic_tag:hover {
+    text-decoration: underline;
+}
+
+/* footer_post */
+
+.footer_post {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.powered {
+    font-size: 12px;
+    color: #BBB;
+}
+
+.info_footer_post > i {
+    font-size: 12px;
+    color: #4d4d4d;
+}
+
+.info_footer_post > a {
+    font-size: 12px;
+    color: #BBB;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info_footer_post > a:hover {
+    text-decoration: underline;
+}

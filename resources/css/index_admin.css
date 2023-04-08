@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+/* background */
+
+.background {
+    width: 100%;
+    height: 660px;
+    position: relative;
+}
+
+.box_top {
+    width: 100%;
+    min-height: 300px;
+    background-color: #5E72E4;
+}
+
+marquee {
+    color: #fff;
+    margin: 4px;
+    font-size: 14px;
+}
+
+.box_bottom {
+    width: 100%;
+    height: 100%;
+    /* background-color: #eff1f3; */
+}
+
+/* body */
+
+.body {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    /* background-color: red; */
+    width: 100%;
+    height: 860px;
+}
+
+.nav_left {
+    background-color: #fff;
+    box-shadow: 0 0 13px 0 rgb(82 63 105 / 12%);
+    width: 250px;
+    height: 96%;
+    margin: 24px 0px 20px 24px;
+    position: fixed;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.content_nav {
+    width: 100%;
+    height: 100%;
+}
+
+.img_nav {
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.navbar {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.nav_item {
+    list-style: none;
+    margin-bottom: 24px;
+    padding: 10.8px 20px;
+}
+
+.nav_item .fa-solid {
+    margin-right: 12px;
+}
+
+.nav_item:hover {
+    background-color: #dfe5eb;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: #344767;
+}
+
+/* container */
+
+.container {
+    height: 100%;
+    /* background-color: aquamarine; */
+    margin: 20px 20px 20px 300px;
+}
+
+.head {
+    width: 100%;
+    height: 64px;
+    position: relative;
+    margin-top: 20px;
+    /* background-color: aquamarine; */
+}
+
+.info_admin {
+    color: #fff;
+    min-width: 32px;
+    display: block;
+    line-height: 70px;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    right: 140px;
+    transform: translateY(-50%);
+}
+
+.img_admin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.name_admin {
+    /* cursor: pointer; */
+}
+
+.icon_head {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+}
+
+.icon_head .fa-solid {
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.btn_logout {
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* content_add */
+
+.content_add {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 13px 0 rgb(82 63 105 / 12%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.form_add_post {
+    box-shadow: 0 0 13px 0 rgba(76, 0, 169, 0.05);
+    padding: 36px;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_add_post span {
+    font-size: 22px;
+    font-weight: 600;
+    color: coral;
+}
+
+.form_add_post label {
+    color: cornflowerblue;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.add_home, .add_post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.add_home {
+    height: 37%;
+}
+
+.add_post {
+    height: 100%;
+}
+
+.btn_add_post {
+    background-color: #04AA6D;
+    color: #fff;
+    border: 1px;
+    border-radius: 50px;
+    padding: 18px 60px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease .2s;
+    align-self: flex-end;
+    font-weight: 600;
+}
+
+.btn_add_post:hover {
+    background-color: #3a9d3e;
+}
+
+textarea, .title_post_add, .time_post_add_home, .img_add {
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 4%);
+    border: 1px solid #cccccd;
+    border-radius: 20px;
+    margin-top: 4px;
+}
+
+textarea:focus, .title_post_add:focus, .time_post_add_home:focus, .img_add:focus {
+    border: 3px solid #a5c8f7;
+    outline: none;
+}
+
+/* edit */
+
+.content_edit {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 13px 0 rgb(82 63 105 / 12%);
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    border-radius: 50px;
+}
+
+td, th {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #bebebe;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+
+.link_edit {
+    color: #3a9d3e;
+}
+
+.link_edit:hover {
+    color: #38d73e;
+}
+
+/* delete */
+
+.content_delete {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 13px 0 rgb(82 63 105 / 12%);
+    display: flex;
+    justify-content: space-around;
+}
+
+.link_delete {
+    color: #ff0000;
+}
+
+.link_delete:hover {
+    color: #be2d2d;
+}
+
+
+/* confirm_delete.php */
+
+.main_delete {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form_delete {
+    background-color: rgb(255 180 180 / 93%);
+    width: 53%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.btn_delete_yes,
+.btn_delete_no {
+    width: 50px;
+    margin: 20px 2px 0 0;
+}
+
+
+.btn_delete_yes {
+    background-color: #e10000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_delete_yes:hover {
+    background-color: #c61c1c;
+}
+
+.btn_delete_no {
+    border: 1px solid #afacac;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease .2s;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+}
+
+.btn_delete_no:hover {
+    background-color: #cecece;
+}
+
+/* confirm_edit.php */
+
+.btn_confirm_edit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_exit_cfedit {
+    background-color: #e24646;
+    color: #fff;
+    border: 1px;
+    border-radius: 50px;
+    padding: 18px 60px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all ease .2s;
+    align-self: flex-end;
+    font-weight: 600;
+}
+
+.btn_exit_cfedit:hover {
+    background-color: #be2d2d;
+}
